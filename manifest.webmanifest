@@ -1,0 +1,10 @@
+{
+  "name": "ARKEM",
+  "short_name": "ARKEM",
+  "description": "A single-player medieval strategy RPG about modular castle building, settlement management, third-person exploration, and defense.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0c0a",
+  "theme_color": "#d4a017",
+  "orientation": "portrait-primary"
+}

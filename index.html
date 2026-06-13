@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title data-i18n="meta.title">ARKEM - Modular Castle-Building Strategy RPG</title>
+  <meta name="description" data-i18n-content="meta.description" content="ARKEM is a single-player medieval strategy RPG about modular castle building, settlement management, third-person exploration, and defending your domain.">
+  <meta name="keywords" content="ARKEM, medieval game, castle building game, strategy RPG, medieval RPG, castle simulator, settlement management, indie game, PC game">
+  <meta name="author" content="Arkem Game Studio">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.arkem-game.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.arkem-game.com/">
+  <meta property="og:title" data-i18n-content="meta.ogTitle" content="ARKEM - Modular Castle-Building Strategy RPG">
+  <meta property="og:description" data-i18n-content="meta.ogDescription" content="Build a modular castle, grow a village, explore in third person, and defend your people in a single-player medieval strategy RPG.">
+  <meta property="og:image" content="https://image.jimcdn.com/app/cms/image/transf/none/path/s5f5f128530f87ed1/backgroundarea/i56e5087897976798/version/1766573105/image.jpg">
+  <meta property="og:image:width" content="2000">
+  <meta property="og:image:height" content="1500">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="ARKEM">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" data-i18n-content="meta.twitterTitle" content="ARKEM - Medieval Strategy RPG">
+  <meta name="twitter:description" data-i18n-content="meta.twitterDescription" content="Build a castle piece by piece, manage a growing settlement, explore the world directly, and defend what you have created.">
+  <meta name="twitter:image" content="https://image.jimcdn.com/app/cms/image/transf/none/path/s5f5f128530f87ed1/backgroundarea/i56e5087897976798/version/1766573105/image.jpg">
+
+  <!-- PWA / Manifest -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#d4a017">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ARKEM">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "ARKEM",
+    "description": "ARKEM is a single-player medieval strategy RPG combining modular castle building, settlement management, third-person exploration, and direct combat.",
+    "genre": ["Strategy", "Role-Playing Game", "Castle Building", "Settlement Management"],
+    "gamePlatform": "PC",
+    "url": "https://www.arkem-game.com/",
+    "image": "https://image.jimcdn.com/app/cms/image/transf/none/path/s5f5f128530f87ed1/backgroundarea/i56e5087897976798/version/1766573105/image.jpg",
+    "publisher": { "@type": "Organization", "name": "Arkem Game Studio", "url": "https://www.arkem-game.com/" },
+    "applicationCategory": "Game",
+    "operatingSystem": "Windows, Linux"
+  }
+  </script>
+
+  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content" data-i18n="common.skip">Skip to main content</a>
+
+<!-- =================== NAV =================== -->
+<header role="banner">
+  <nav id="nav" aria-label="Main navigation" data-i18n-aria-label="nav.aria">
+    <a href="#hero" class="nav-logo" aria-label="ARKEM - Home" data-i18n-aria-label="nav.homeLabel">ARKEM</a>
+
+    <ul class="nav-links" id="primary-navigation" role="list">
+      <li><a href="#story" data-i18n="nav.story">Story</a></li>
+      <li><a href="#features" data-i18n="nav.features">Gameplay</a></li>
+      <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+      <li><a href="#support" data-i18n="nav.support">Support</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      <li><a href="https://store.steampowered.com/" target="_blank" rel="noopener" class="nav-cta" data-i18n="nav.wishlist">Wishlist on Steam</a></li>
+      <li class="nav-language">
+        <div class="language-switcher" role="group" aria-label="Language selection" data-i18n-aria-label="language.label">
+          <button type="button" class="language-btn" data-lang="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" class="language-btn" data-lang="pl" aria-pressed="false">PL</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" class="language-btn" data-lang="de" aria-pressed="false">DE</button>
+        </div>
+      </li>
+    </ul>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" data-i18n-aria-label="nav.toggle" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- =================== HERO =================== -->
+<main id="main-content">
+<section id="hero" aria-label="Hero - ARKEM introduction" data-i18n-aria-label="hero.aria">
+  <div class="hero-bg" role="img" aria-label="A medieval castle at dusk" data-i18n-aria-label="hero.bgAlt"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow" data-i18n="hero.eyebrow">Medieval Strategy RPG</p>
+    <h1 class="hero-title" data-i18n-html="hero.title">Build Your<br>Legacy</h1>
+    <p class="hero-subtitle" data-i18n="hero.subtitle">
+      Build a modular castle, grow a village around it, explore the world in third person, and defend everything you have created.
+    </p>
+    <div class="hero-actions">
+      <a href="https://store.steampowered.com/" target="_blank" rel="noopener" class="btn btn-primary">
+        <span aria-hidden="true">&#9876;</span>
+        <span data-i18n="cta.wishlist">Wishlist on Steam</span>
+      </a>
+      <a href="#story" class="btn btn-ghost" data-i18n="cta.discover">Discover the World</a>
+    </div>
+  </div>
+</section>
+
+<!-- =================== STORY =================== -->
+<div class="battlements" aria-hidden="true"></div>
+<section id="story" aria-labelledby="story-heading">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-text">
+        <p class="section-label reveal" data-i18n="story.label">Chronicle</p>
+        <h2 id="story-heading" class="section-title reveal reveal-delay-1" data-i18n="story.title">Rule From Stone, Ride Beyond It</h2>
+        <p class="reveal reveal-delay-2" data-i18n="story.p1">
+          Arkem is a single-player medieval strategy RPG that combines modular castle building, settlement management, third-person exploration, and direct combat. You begin with little more than land, ambition, and a reason to fight. From that foundation, you raise a stronghold, gather people around it, and turn a fragile settlement into a seat of power.
+        </p>
+        <p class="reveal reveal-delay-2" data-i18n="story.p2">
+          Your castle is not a fixed structure. Walls, towers, gates, courtyards, keeps, and defensive lines are placed piece by piece, allowing you to shape both the appearance and the function of your fortress. Every choice matters: a stronger gate may delay raiders, a better granary may keep your people alive through hardship, and a well-planned courtyard may become the heart of your growing domain.
+        </p>
+        <p class="reveal reveal-delay-3" data-i18n="story.p3">
+          Beyond the walls, Arkem becomes a hands-on RPG. Leave the planning view, take control of your lord directly, travel on foot or horseback, visit villages and towns, meet NPCs, accept quests, gather resources, and face danger yourself. Your decisions as a ruler and your actions as a character are part of the same world.
+        </p>
+        <p class="reveal reveal-delay-3" data-i18n="story.p4">
+          But growth brings attention. Raiders, enemies, and rival powers may threaten what you have built. Train and equip your followers, organize your defenses, command troops from above, or join the battle personally. A castle is not only a home - it is your final line of defense.
+        </p>
+        <p class="reveal reveal-delay-3" data-i18n="story.p5">
+          Set in an alternative medieval world inspired by the years 950-1300 AD, Arkem draws from real historical themes such as Viking incursions, feudal power, frontier settlement, and crusading warfare. Each map offers different landscapes, resources, dangers, and opportunities. Where you settle, how you build, and what kind of ruler you become is up to you.
+        </p>
+      </div>
+
+      <div class="story-image-wrap reveal reveal-delay-2">
+        <img
+          src="https://image.jimcdn.com/app/cms/image/transf/none/path/s5f5f128530f87ed1/backgroundarea/i56e5087897976798/version/1766573105/image.jpg"
+          alt="A vast medieval landscape with misty mountains and castle battlements at dawn"
+          data-i18n-alt="story.imageAlt"
+          loading="lazy"
+          width="600" height="420"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<div class="battlements flip" aria-hidden="true"></div>
+
+<!-- =================== GAMEPLAY PILLARS =================== -->
+<section id="features" aria-labelledby="features-heading">
+  <div class="container">
+    <div class="features-header text-center reveal">
+      <p class="section-label" data-i18n="features.label">Gameplay Pillars</p>
+      <h2 id="features-heading" class="section-title" data-i18n="features.title">Build, Govern, Explore, Defend</h2>
+      <p class="section-lead" data-i18n="features.lead">
+        Arkem is built around connected systems: the fortress you design, the people who depend on it, and the dangerous world beyond the gate.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">&#127984;</div>
+        <h3 data-i18n="features.castle.title">Modular Castle Building</h3>
+        <p data-i18n="features.castle.desc">
+          Place walls, towers, gates, courtyards, keeps, and defensive structures piece by piece to shape a fortress that fits your terrain and strategy.
+        </p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon" aria-hidden="true">&#9874;</div>
+        <h3 data-i18n="features.settlement.title">Settlement Growth</h3>
+        <p data-i18n="features.settlement.desc">
+          Grow a small camp into a working village with food, workshops, storage, housing, and people who can become the backbone of your domain.
+        </p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon" aria-hidden="true">&#128506;</div>
+        <h3 data-i18n="features.exploration.title">Third-Person RPG Exploration</h3>
+        <p data-i18n="features.exploration.desc">
+          Step out of the planning view and control your lord directly as you travel on foot or horseback, meet NPCs, gather resources, and take on quests.
+        </p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon" aria-hidden="true">&#9876;</div>
+        <h3 data-i18n="features.warfare.title">Defense and Warfare</h3>
+        <p data-i18n="features.warfare.desc">
+          Prepare for raids by training followers, equipping your people, organizing defenses, commanding from above, or entering the battle yourself.
+        </p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">&#128214;</div>
+        <h3 data-i18n="features.history.title">Historically Inspired World</h3>
+        <p data-i18n="features.history.desc">
+          Explore an alternative medieval setting shaped by themes from 950-1300 AD: Viking pressure, feudal politics, frontier life, and crusading warfare.
+        </p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon" aria-hidden="true">&#9968;</div>
+        <h3 data-i18n="features.regions.title">Multiple Regions and Maps</h3>
+        <p data-i18n="features.regions.desc">
+          Different regions bring distinct landscapes, resources, dangers, and settlement opportunities that change how you build and survive.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== DEVELOPMENT STATUS =================== -->
+<section id="development" aria-labelledby="development-heading">
+  <div class="container">
+    <div class="status-layout">
+      <div class="reveal">
+        <p class="section-label" data-i18n="development.label">Development Status</p>
+        <h2 id="development-heading" class="section-title" data-i18n="development.title">In Active Development</h2>
+        <p class="section-lead" data-i18n="development.lead">
+          Arkem is an indie project in progress. The systems below are being developed, tested, or planned, and the final game may change as production continues.
+        </p>
+      </div>
+
+      <div class="status-panel reveal reveal-delay-1" aria-label="Development status list" data-i18n-aria-label="development.listAria">
+        <ul class="status-list">
+          <li class="status-row">
+            <span data-i18n="development.item.castle">Modular castle building</span>
+            <strong data-i18n="development.state.inDevelopment">in development</strong>
+          </li>
+          <li class="status-row">
+            <span data-i18n="development.item.settlement">Settlement management</span>
+            <strong data-i18n="development.state.inDevelopment">in development</strong>
+          </li>
+          <li class="status-row">
+            <span data-i18n="development.item.exploration">Third-person exploration</span>
+            <strong data-i18n="development.state.prototype">prototype / planned</strong>
+          </li>
+          <li class="status-row">
+            <span data-i18n="development.item.npcs">NPCs and quests</span>
+            <strong data-i18n="development.state.planned">planned</strong>
+          </li>
+          <li class="status-row">
+            <span data-i18n="development.item.raids">Raids and castle defense</span>
+            <strong data-i18n="development.state.inDevelopment">in development</strong>
+          </li>
+          <li class="status-row">
+            <span data-i18n="development.item.demo">Steam page / demo</span>
+            <strong data-i18n="development.state.soon">coming soon</strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== GALLERY =================== -->
+<div class="battlements" aria-hidden="true"></div>
+<section id="gallery" aria-labelledby="gallery-heading">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:1rem">
+      <p class="section-label" data-i18n="gallery.label">Visuals</p>
+      <h2 id="gallery-heading" class="section-title" data-i18n="gallery.title">The World of Arkem</h2>
+      <p class="section-lead" data-i18n="gallery.lead">
+        Work-in-progress visuals and concept-like previews. Final gameplay screenshots may differ.
+      </p>
+    </div>
+
+    <div class="gallery-grid" role="list">
+      <div class="gallery-item featured reveal" role="button" tabindex="0" aria-label="Open visual preview: Castle at dusk" data-i18n-aria-label="gallery.item1.aria">
+        <img
+          src="https://image.jimcdn.com/app/cms/image/transf/none/path/s5f5f128530f87ed1/backgroundarea/i56e5087897976798/version/1766573105/image.jpg"
+          alt="A castle gatehouse at dusk with torchlight along the ramparts"
+          data-i18n-alt="gallery.item1.alt"
+          loading="lazy" width="800" height="380"
+        >
+        <span class="gallery-caption" data-i18n="gallery.item1.caption">Castle approach</span>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-1" role="button" tabindex="0" aria-label="Open visual preview: Region planning" data-i18n-aria-label="gallery.item2.aria">
+        <img
+          src="https://image.jimcdn.com/app/cms/image/transf/none/path/s5f5f128530f87ed1/backgroundarea/i56e5087897976798/version/1766573105/image.jpg"
+          alt="A medieval landscape suggesting future regional planning"
+          data-i18n-alt="gallery.item2.alt"
+          loading="lazy" width="400" height="280"
+          style="filter:sepia(40%) hue-rotate(10deg) brightness(0.75)"
+        >
+        <span class="gallery-caption" data-i18n="gallery.item2.caption">Region planning</span>
+      </div>
+
+      <div class="gallery-item reveal" role="button" tabindex="0" aria-label="Open visual preview: Raiders beyond the coast" data-i18n-aria-label="gallery.item3.aria">
+        <img
+          src="https://image.jimcdn.com/app/cms/image/transf/none/path/s5f5f128530f87ed1/backgroundarea/i56e5087897976798/version/1766573105/image.jpg"
+          alt="A dark coastal landscape used as a raid concept preview"
+          data-i18n-alt="gallery.item3.alt"
+          loading="lazy" width="400" height="280"
+          style="filter:sepia(60%) hue-rotate(-20deg) brightness(0.65)"
+        >
+        <span class="gallery-caption" data-i18n="gallery.item3.caption">Raid threat</span>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-1" role="button" tabindex="0" aria-label="Open visual preview: Exploration mood" data-i18n-aria-label="gallery.item4.aria">
+        <img
+          src="https://image.jimcdn.com/app/cms/image/transf/none/path/s5f5f128530f87ed1/backgroundarea/i56e5087897976798/version/1766573105/image.jpg"
+          alt="A forested medieval vista representing third-person exploration"
+          data-i18n-alt="gallery.item4.alt"
+          loading="lazy" width="400" height="280"
+          style="filter:sepia(20%) hue-rotate(30deg) brightness(0.8)"
+        >
+        <span class="gallery-caption" data-i18n="gallery.item4.caption">Exploration mood</span>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-2" role="button" tabindex="0" aria-label="Open visual preview: Stronghold interior" data-i18n-aria-label="gallery.item5.aria">
+        <img
+          src="https://image.jimcdn.com/app/cms/image/transf/none/path/s5f5f128530f87ed1/backgroundarea/i56e5087897976798/version/1766573105/image.jpg"
+          alt="A warm medieval interior mood preview for a future stronghold"
+          data-i18n-alt="gallery.item5.alt"
+          loading="lazy" width="400" height="280"
+          style="filter:sepia(35%) brightness(0.7)"
+        >
+        <span class="gallery-caption" data-i18n="gallery.item5.caption">Stronghold interior</span>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="battlements flip" aria-hidden="true"></div>
+
+<!-- =================== SUPPORT =================== -->
+<section id="support" aria-labelledby="support-heading">
+  <div class="container">
+    <div class="support-intro reveal">
+      <p class="section-label" data-i18n="support.label">Follow Development</p>
+      <h2 id="support-heading" class="section-title" data-i18n="support.title">Help Arkem Find Its Audience</h2>
+      <p data-i18n="support.lead">
+        The most useful support right now is visibility, feedback, and a community that cares about grounded medieval strategy RPGs.
+      </p>
+    </div>
+
+    <div class="support-grid support-grid-primary">
+      <div class="support-card is-primary reveal">
+        <div class="icon" aria-hidden="true">&#127918;</div>
+        <h3 data-i18n="support.steam.title">Wishlist on Steam</h3>
+        <p data-i18n="support.steam.desc">Wishlisting helps more players discover Arkem when the Steam page and demo are ready.</p>
+        <a href="https://store.steampowered.com/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="support.steam.cta">Wishlist on Steam</a>
+      </div>
+
+      <div class="support-card is-primary reveal reveal-delay-1">
+        <div class="icon" aria-hidden="true">&#128172;</div>
+        <h3 data-i18n="support.discord.title">Join Discord</h3>
+        <p data-i18n="support.discord.desc">Follow progress, discuss ideas, and share feedback with the small team building the game.</p>
+        <a href="https://discord.com/" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="support.discord.cta">Join Discord</a>
+      </div>
+
+      <div class="support-card is-primary reveal reveal-delay-2">
+        <div class="icon" aria-hidden="true">&#128240;</div>
+        <h3 data-i18n="support.updates.title">Follow Updates</h3>
+        <p data-i18n="support.updates.desc">Watch the project develop through dev notes, feature previews, and honest production updates.</p>
+        <a href="#contact" class="btn btn-ghost" data-i18n="support.updates.cta">Get Updates</a>
+      </div>
+    </div>
+
+    <p class="support-note reveal" data-i18n="support.optional">Optional support for development costs</p>
+    <div class="support-grid optional-support-grid">
+      <div class="support-card reveal">
+        <div class="icon" aria-hidden="true">&#128176;</div>
+        <h3 data-i18n="support.paypal.title">PayPal</h3>
+        <p data-i18n="support.paypal.desc">A one-time donation can help cover practical development expenses.</p>
+        <a href="https://www.paypal.com/" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="support.paypal.cta">Donate via PayPal</a>
+      </div>
+
+      <div class="support-card reveal reveal-delay-1">
+        <div class="icon" aria-hidden="true">&#127963;</div>
+        <h3 data-i18n="support.patreon.title">Patreon</h3>
+        <p data-i18n="support.patreon.desc">Monthly support is optional and aimed at people who want to stay close to development.</p>
+        <a href="https://www.patreon.com/" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="support.patreon.cta">Become a Patron</a>
+      </div>
+
+      <div class="support-card reveal reveal-delay-2">
+        <div class="icon" aria-hidden="true">&#9749;</div>
+        <h3 data-i18n="support.kofi.title">Ko-fi</h3>
+        <p data-i18n="support.kofi.desc">Small tips are welcome, but following and sharing the project matters most.</p>
+        <a href="https://ko-fi.com/" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="support.kofi.cta">Buy a Ko-fi</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FAQ =================== -->
+<section id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="section-label" data-i18n="faq.label">FAQ</p>
+      <h2 id="faq-heading" class="section-title" data-i18n="faq.title">Questions From the Gatehouse</h2>
+      <p class="section-lead" data-i18n="faq.lead">Short answers about the current direction of Arkem.</p>
+    </div>
+
+    <div class="faq-list reveal reveal-delay-1">
+      <details class="faq-item">
+        <summary data-i18n="faq.q1">Is Arkem single-player?</summary>
+        <p data-i18n="faq.a1">Yes. Arkem is currently designed as a single-player medieval strategy RPG.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq.q2">Will there be multiplayer?</summary>
+        <p data-i18n="faq.a2">Multiplayer is not the current focus. The priority is a strong single-player foundation.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq.q3">Can I build freely?</summary>
+        <p data-i18n="faq.a3">The goal is modular castle construction with meaningful placement choices, terrain limits, and defensive planning.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq.q4">Is the game historically accurate?</summary>
+        <p data-i18n="faq.a4">Arkem is historically inspired, not a strict simulation. It draws from medieval themes while using an alternative world.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq.q5">Will there be a demo?</summary>
+        <p data-i18n="faq.a5">A demo is planned, but the timing depends on development progress.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq.q6">What platforms are planned?</summary>
+        <p data-i18n="faq.a6">PC is the main target. Other platforms have not been confirmed.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq.q7">Is Arkem open world?</summary>
+        <p data-i18n="faq.a7">The project is aiming for explorable regions and maps rather than promising a vast seamless open world.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq.q8">How can I follow development?</summary>
+        <p data-i18n="faq.a8">Wishlist the game, join Discord, and follow development updates as the project moves toward a Steam page and demo.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CONTACT =================== -->
+<div class="battlements" aria-hidden="true"></div>
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p class="section-label" data-i18n="contact.label">Get in Touch</p>
+        <h2 id="contact-heading" class="section-title" data-i18n="contact.title">Contact Us</h2>
+        <p data-i18n="contact.lead">
+          Questions, suggestions, or development feedback are welcome. Every useful message helps shape the next version of Arkem.
+        </p>
+        <div class="contact-detail">
+          <span class="icon" aria-hidden="true">&#9993;</span>
+          <span data-i18n="contact.email">info@arkem-game.com</span>
+        </div>
+        <div class="contact-detail">
+          <span class="icon" aria-hidden="true">&#128172;</span>
+          <span data-i18n="contact.discord">Discord community</span>
+        </div>
+        <div class="contact-detail">
+          <span class="icon" aria-hidden="true">&#127918;</span>
+          <span data-i18n="contact.steam">Steam page</span>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <form id="contact-form" novalidate aria-label="Contact form" data-i18n-aria-label="form.aria">
+          <div class="form-field">
+            <label for="name"><span data-i18n="form.name">Name</span> <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required
+              placeholder="Your name" data-i18n-placeholder="form.namePlaceholder" aria-required="true">
+          </div>
+          <div class="form-field">
+            <label for="email"><span data-i18n="form.email">Email</span> <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required
+              placeholder="your@email.com" data-i18n-placeholder="form.emailPlaceholder" aria-required="true">
+          </div>
+          <div class="form-field">
+            <label for="message"><span data-i18n="form.message">Message</span> <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required
+              placeholder="Write your message here..." data-i18n-placeholder="form.messagePlaceholder" aria-required="true"></textarea>
+          </div>
+          <p class="form-notice">
+            <span data-i18n="form.noticeBefore">Fields marked * are required.</span>
+            <a href="pages/privacy.html" data-i18n="form.privacyLink">Privacy Policy</a>
+            <span data-i18n="form.noticeAfter">applies.</span>
+          </p>
+          <button type="submit" class="btn btn-primary" style="margin-top:1rem;width:100%;justify-content:center">
+            <span aria-hidden="true">&#9993;</span>
+            <span data-i18n="form.submit">Prepare Email</span>
+          </button>
+          <p class="form-success" role="status" aria-live="polite" data-i18n="form.mailtoPrepared">
+            Your email client should now open with a prepared message.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="battlements flip" aria-hidden="true"></div>
+
+</main>
+
+<!-- =================== FOOTER =================== -->
+<footer id="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo">ARKEM</span>
+      <p data-i18n="footer.description">
+        A single-player medieval strategy RPG about building a fortress, growing a settlement, exploring the world, and defending your people.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4 data-i18n="footer.navigate">Navigate</h4>
+      <ul>
+        <li><a href="#story" data-i18n="nav.story">Story</a></li>
+        <li><a href="#features" data-i18n="nav.features">Gameplay</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="#support" data-i18n="nav.support">Support</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 data-i18n="footer.legal">Legal</h4>
+      <ul>
+        <li><a href="pages/terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a></li>
+        <li><a href="pages/privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+        <li><a href="pages/returns.html" data-i18n="footer.returns">Returns &amp; Withdrawal</a></li>
+        <li><a href="pages/imprint.html" data-i18n="footer.imprint">Imprint</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; <span data-current-year></span> Arkem Game Studio. <span data-i18n="footer.rights">All rights reserved.</span></span>
+    <span data-i18n="footer.made">Made with craft and care by a small indie team</span>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" data-i18n-aria-label="lightbox.aria">
+  <button id="lightbox-close" aria-label="Close image viewer" data-i18n-aria-label="lightbox.close">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
